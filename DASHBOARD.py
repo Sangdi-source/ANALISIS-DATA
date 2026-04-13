@@ -11,8 +11,8 @@ st.set_page_config(
 #LOAD DATA YANG DIPAKAI
 @st.cache_data
 def load_data():
-    revenue = pd.read_csv("revenue_clean.csv")
-    geo = pd.read_csv("geo_clean.csv")
+    revenue = pd.read_csv("data/revenue_clean.csv")
+    geo = pd.read_csv("data/geo_clean.csv")
 
     #DATETIME
     revenue["shipping_limit_date"] = pd.to_datetime(
